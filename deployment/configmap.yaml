@@ -4,7 +4,7 @@ metadata:
   name: db-config
 data:
   DB_NAME: mydatabase
-  DB_HOST: 10.100.136.226
+  DB_HOST: 10.100.122.146
   DB_PORT: 5432
 ---
 apiVersion: v1
