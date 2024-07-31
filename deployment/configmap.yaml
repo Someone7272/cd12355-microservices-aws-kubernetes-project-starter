@@ -13,5 +13,5 @@ metadata:
   name: db-secret
 type: Opaque
 data:
-  DB_USERNAME: bXl1c2VyCg==
-  DB_PASSWORD: bXlwYXNzd29yZAo=
+  DB_USERNAME: bXl1c2Vy
+  DB_PASSWORD: bXlwYXNzd29yZA==
