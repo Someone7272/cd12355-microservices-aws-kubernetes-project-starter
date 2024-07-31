@@ -6,12 +6,3 @@ data:
   DB_NAME: mydatabase
   DB_HOST: 10.100.122.146
   DB_PORT: 5432
----
-apiVersion: v1
-kind: Secret
-metadata:
-  name: db-secret
-type: Opaque
-data:
-  DB_USER: bXl1c2VyCg==
-  DB_PASSWORD: bXlwYXNzd29yZAo=
