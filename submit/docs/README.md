@@ -50,8 +50,11 @@ Open `postgresql-deployment.yaml`. You can change the `POSTGRES_DB`, `POSTGRES_U
 Once you're done, you can apply the deployment manifests to the cluster.
 
 `kubectl apply -f pvc.yaml`
+
 `kubectl apply -f pv.yaml`
+
 `kubectl apply -f postgresql-deployment.yaml`
+
 `kubectl apply -f postgresql-service.yaml`
 
 Connect to the database to set up the database structure. We can use kubectl port forwarding for this.
@@ -61,6 +64,7 @@ Connect to the database to set up the database structure. We can use kubectl por
 After you've done that, install PostgreSQL components on your local environment.
 
 `apt update`
+
 `apt install postgresql postgresql-contrib`
 
 Set your database password that you configured in `postgresql-deployment.yaml` as an environment variable.
@@ -139,6 +143,7 @@ Test the application using a HTTP get request.
 Run `kubectl get svc` again. The microservices application will have an external address. Use this to test the application.
 
 `curl [EXTERNAL ADDRESS]:[5153]/api/reports/daily_usage`
+
 `curl [EXTERNAL ADDRESS]:[5153]/api/reports/user_visits`
 
 Both of these requests should respond with JSON. If an error is returned, check the basic troubleshooting section further down this page.
