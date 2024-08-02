@@ -163,7 +163,7 @@ Then you can use this command to update the IAM role policy.
 
 ### Add the CloudWatch Container Insights add-on to the cluster
 
-Use this command to install the add-on to your cluster
+Use this command to install the add-on to your cluster.
 
 `aws eks create-addon --addon-name amazon-cloudwatch-observability --cluster-name [NAME OF YOUR CLUSTER]`
 
